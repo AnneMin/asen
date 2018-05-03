@@ -36,5 +36,9 @@ export default {
     Vue.component('UiSwitch', (resolve) => {
       resolve(require('./_uiSwitch/Switch.vue'))
     })
+     // Steps
+    Vue.component('UiBadge', (resolve) => {
+      resolve(require('./_uiBadge/Badge.vue'))
+    })
   }
 }

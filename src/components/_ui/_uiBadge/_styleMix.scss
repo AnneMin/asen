@@ -1,0 +1,44 @@
+@mixin ui-badge {
+  ._ui-badge {
+    position: relative;
+    display: flex;
+    width: pxRem(50);
+    min-width: pxRem(50);
+    height: pxRem(32);
+    min-height: pxRem(32);
+    border: pxRem(1) solid $color-border-default;
+    border-radius: pxRem(5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: pxRem(20);
+    cursor: pointer;
+    &:hover, &:focus{
+      border:pxRem(1) solid $color-primary;
+      color: $color-primary;
+    }
+    & .tip {
+      display: flex;
+      font-style: normal;
+      background-color: #ef4f4f;
+      border-radius: pxRem(10);
+      color: #fff;
+      font-size: pxRem(12);
+      height: pxRem(18);
+      line-height: pxRem(18);
+      padding: 0 pxRem(5);
+      text-align: center;
+      white-space: nowrap;
+      border: pxRem(1) solid #fff;
+      top: 0;
+      right: pxRem(10);
+      position: absolute;
+      align-items: center;
+      -webkit-transform: translateY(-50%) translateX(100%);
+      transform: translateY(-50%) translateX(100%);
+      justify-content: center;
+
+    }
+  }
+}

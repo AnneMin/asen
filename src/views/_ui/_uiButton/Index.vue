@@ -41,6 +41,7 @@
 // import Button from '@/components/_ui/_uiButton/button.vue'
 // or global lazy load
 import '@/components/_ui/_uiButton'
+
 export default {
   methods: {
     hi (num) {
