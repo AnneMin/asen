@@ -1,6 +1,6 @@
 <template>
     <div class="_ui-badge">
-        <i class="tip" @click="maxDigit">{{val}}</i>
+        <i class="tip">{{showVal.val}}</i>
         <slot></slot>
     </div>
 </template>
@@ -16,20 +16,17 @@ export default {
     }
   },
   computed: {
-    // maxDigit () {
-    // return this.val > this.max ? this.val = '99+' : this.val
-    // }
+    showVal () {
+      return {
+        val: this.val > this.max ? this.max + '+' : this.val
+      }
+    }
   },
-  watch: {
-
-  },
-  methods: {
-
-  }
+  watch: {},
+  methods: {}
 }
 </script>
-
 <style lang="scss" scoped>
-    @import "styleMix";
-    @include ui-badge;
+@import "styleMix";
+@include ui-badge;
 </style>

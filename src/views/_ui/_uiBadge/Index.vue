@@ -9,8 +9,8 @@ import '@/components/_ui/_uiBadge'
 export default {
   data () {
     return {
-      val: 101,
-      max: 9
+      val: 30,
+      max: 20
     }
   }
 }
